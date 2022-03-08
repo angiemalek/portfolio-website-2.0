@@ -1,0 +1,3 @@
+only issue seemed to be that my logo image is 
+different even though file path is correct.  unsure 
+how to fix.  when ran on local machine appears correct
