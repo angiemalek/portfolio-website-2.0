@@ -1,0 +1,7 @@
+Linters Used:
+
+w3c validation
+
+linter-stylelint
+
+linter-htmllint
