@@ -21,25 +21,24 @@ body {
   background-color: #ffebcc;
 }
 
-a: link {
+a:link {
   color: #000;
   text-decoration: none;
 }
 
-a: visited {
+a:visited {
   /* visited link */
   color: #fff;
   text-decoration: none;
 }
 
-a: hover,
-a: focus {
+a:hover,
+a:focus {
   /* No underliying when hovering over a link */
   text-decoration: none;
 }
 
-a: active {
-  /* selected link */
+a:active {  /* selected link */
   color: #489c79;
 }
 
@@ -60,8 +59,8 @@ button {
   transition-property: opacity;
 }
 
-button: hover,
-button: focus, {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer; /* reduces the opacity of the button to 80% */
   opacity: 0.5;
@@ -125,7 +124,8 @@ textarea {
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
-  resize: auto;
+  resize: both;
+  overflow: auto;
 }
 
 input[type=email] {
@@ -137,12 +137,10 @@ input[type=email] {
 }
 
 .profile__portrait {
-  float: center;
-  width: 250px;
-  height: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-  shape-outside: circle(50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .points {
@@ -157,7 +155,7 @@ input[type=email] {
 }
 
 .profile__text {
-  display: center;
+  text-align: center;
 }
 
 .about {
@@ -224,19 +222,5 @@ input[type=email] {
 
   h1 {
     font-size: 25px;
-  }
-}
-
-@keyframes color-change /*this is just the name given to animation*/ {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
   }
 }
